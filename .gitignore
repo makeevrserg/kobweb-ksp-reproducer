@@ -1,0 +1,10 @@
+.gradle
+.kotlin
+.idea
+build
+kotlin-js-store
+web-app/.kobweb/server
+local.properties
+web-trucktier/cli
+web-trucktier/kobweb-*
+web-trucktier/kobweb*zip
