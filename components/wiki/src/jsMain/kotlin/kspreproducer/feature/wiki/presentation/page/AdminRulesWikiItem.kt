@@ -5,29 +5,29 @@ package kspreproducer.feature.wiki.presentation.page
 import kspreproducer.feature.wiki.presentation.model.WikiItem
 
 val adminRulesWiki = buildList {
-    add(WikiItem.Text("blablalbabbalblablabl"))
-    add(WikiItem.Text("blablalbabbalblablabl"))
-    add(WikiItem.Text("blablalbabbalblablabl"))
-    add(WikiItem.Text("blablalbabbalblablabl"))
+    add(WikiItem.Text("йцукенгшщзхъфывапролджэячсмитьбю"))
+    add(WikiItem.Text("йцукенгшщзхъфывапролджэячсмитьбю"))
+    add(WikiItem.Text("йцукенгшщзхъфывапролджэячсмитьбю"))
+    add(WikiItem.Text("йцукенгшщзхъфывапролджэячсмитьбю"))
 
-    add(WikiItem.Item.Card("blablalbabbalblablabl"))
-    add(WikiItem.Item.Card("blablalbabbalblablabl"))
-    add(WikiItem.Item.Card("blablalbabbalblablabl"))
-    add(WikiItem.Item.Card("blablalbabbalblablabl"))
+    add(WikiItem.Item.Card("йцукенгшщзхъфывапролджэячсмитьбю"))
+    add(WikiItem.Item.Card("йцукенгшщзхъфывапролджэячсмитьбю"))
+    add(WikiItem.Item.Card("йцукенгшщзхъфывапролджэячсмитьбю"))
+    add(WikiItem.Item.Card("йцукенгшщзхъфывапролджэячсмитьбю"))
     add(
         WikiItem.Item.Card(
-            "blablalbabbalblablabl"
+            "йцукенгшщзхъфывапролджэячсмитьбю"
         )
     )
-    add(WikiItem.Item.Card("blablalbabbalblablabl"))
+    add(WikiItem.Item.Card("йцукенгшщзхъфывапролджэячсмитьбю"))
     add(
-        WikiItem.Item.Expandable("blablalbabbalblablabl") {
-            add("blablalbabbalblablabl")
+        WikiItem.Item.Expandable("йцукенгшщзхъфывапролджэячсмитьбю") {
+            add("йцукенгшщзхъфывапролджэячсмитьбю")
             add(
-                "blablalbabbalblablabl"
+                "йцукенгшщзхъфывапролджэячсмитьбю"
             )
             add(
-                "blablalbabbalblablabl"
+                "йцукенгшщзхъфывапролджэячсмитьбю"
             )
         }
     )

@@ -1,7 +1,7 @@
 package kspreproducer.feature.wiki.presentation
 
-import kotlinx.coroutines.flow.StateFlow
 import kspreproducer.feature.wiki.presentation.model.WikiItem
+import kotlinx.coroutines.flow.StateFlow
 
 interface WikiPageComponent {
     val pages: List<Model>
@@ -18,7 +18,7 @@ interface WikiPageComponent {
         ) : Model {
             data object MainWikiPage : Page(
                 fragment = "/wiki",
-                title = "Wiki EmpireSMP",
+                title = "Вики EmpireSMP",
             )
 
             data class WikiPageModel(
