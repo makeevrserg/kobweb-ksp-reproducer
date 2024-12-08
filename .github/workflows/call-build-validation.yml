@@ -17,4 +17,4 @@ jobs:
       - name: build
         uses: gradle/gradle-build-action@v2
         with:
-          arguments: build --info --debug --stacktrace
+          arguments: build --info --stacktrace
