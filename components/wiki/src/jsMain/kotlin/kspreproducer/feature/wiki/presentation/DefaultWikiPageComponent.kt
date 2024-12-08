@@ -7,7 +7,7 @@ class DefaultWikiPageComponent : WikiPageComponent {
         WikiPageComponent.Model.Page.MainWikiPage,
         WikiPageComponent.Model.Page.WikiWithSubPageModel(
             fragmentInternal = "core",
-            titleInternal = "qwertyuiopasdfghjkkllzxcvbnm",
+            titleInternal = "qwertyuiopasdfghjkkllzxcvbnmz",
             contents = emptyList(),
             pages = listOf(
                 WikiPageComponent.Model.Page.WikiPageModel(
