@@ -18,7 +18,7 @@ interface WikiPageComponent {
         ) : Model {
             data object MainWikiPage : Page(
                 fragment = "/wiki",
-                title = "Вики EmpireSMP",
+                title = "qwertyuiopasdfghjkkllzxcvbnm EmpireSMP",
             )
 
             data class WikiPageModel(
