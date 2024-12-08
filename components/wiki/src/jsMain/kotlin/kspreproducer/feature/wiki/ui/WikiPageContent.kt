@@ -5,12 +5,9 @@ import com.varabyte.kobweb.compose.foundation.layout.Arrangement
 import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.foundation.layout.Row
 import com.varabyte.kobweb.compose.ui.Modifier
-//import empiresmp.components.PlatformExt.isMobilePlatform
-//import empiresmp.components.layouts.PageLayout
-//import empiresmp.components.navbar.EmpireSmpDesktopNavBar
 import kspreproducer.feature.wiki.ui.component.MainWikiLayout
 
-//import ru.astrainteractive.kobwebx.core.theme.composable.LocalSitePalette
+// import ru.astrainteractive.kobwebx.core.theme.composable.LocalSitePalette
 
 @Suppress("LongMethod")
 @Composable
@@ -19,19 +16,19 @@ fun WikiPageContent(fragment: String) {
 
 //    PageLayout {
 //        EmpireSmpDesktopNavBar()
-        Row(
+    Row(
 //            modifier = Modifier.fillMaxWidth().padding(topBottom = theme.dimens.L),
-            horizontalArrangement = Arrangement.Center
-        ) {
-            Column(
-                Modifier
+        horizontalArrangement = Arrangement.Center
+    ) {
+        Column(
+            Modifier
 //                    .padding(left = theme.dimens.L, right = theme.dimens.L)
 //                    .thenIf(isMobilePlatform, Modifier.width(95.percent))
 //                    .thenIf(!isMobilePlatform, Modifier.width(80.percent)),
 //                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                MainWikiLayout()
-            }
+        ) {
+            MainWikiLayout()
         }
+    }
 //    }
 }

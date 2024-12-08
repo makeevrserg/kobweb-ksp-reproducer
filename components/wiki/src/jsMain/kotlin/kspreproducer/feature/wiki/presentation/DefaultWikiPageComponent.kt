@@ -1,13 +1,7 @@
 package kspreproducer.feature.wiki.presentation
 
-import kspreproducer.feature.wiki.presentation.page.adminRulesWiki
-import kspreproducer.feature.wiki.presentation.page.baseWikiPage
-import kspreproducer.feature.wiki.presentation.page.commandsWikiPage
-import kspreproducer.feature.wiki.presentation.page.economicsWikiPage
-import kspreproducer.feature.wiki.presentation.page.rulesWIki
-import kspreproducer.feature.wiki.presentation.page.townsWiki
-import kspreproducer.feature.wiki.presentation.page.wipesWikiPage
 import kotlinx.coroutines.flow.MutableStateFlow
+import kspreproducer.feature.wiki.presentation.page.townsWiki
 
 class DefaultWikiPageComponent : WikiPageComponent {
     override val pages: List<WikiPageComponent.Model> = listOf(
@@ -15,22 +9,22 @@ class DefaultWikiPageComponent : WikiPageComponent {
         WikiPageComponent.Model.Page.WikiWithSubPageModel(
             fragmentInternal = "core",
             titleInternal = "йцукенгшщзхъфывапролджэячсмитьбю",
-            contents = baseWikiPage,
+            contents = townsWiki,
             pages = listOf(
                 WikiPageComponent.Model.Page.WikiPageModel(
                     fragmentInternal = "wipes",
                     titleInternal = "йцукенгшщзхъфывапролджэячсмитьбю",
-                    contents = wipesWikiPage
+                    contents = townsWiki
                 ),
                 WikiPageComponent.Model.Page.WikiPageModel(
                     fragmentInternal = "rules",
                     titleInternal = "йцукенгшщзхъфывапролджэячсмитьбю",
-                    contents = rulesWIki
+                    contents = townsWiki
                 ),
                 WikiPageComponent.Model.Page.WikiPageModel(
                     fragmentInternal = "rules_mod",
                     titleInternal = "йцукенгшщзхъфывапролджэячсмитьбю",
-                    contents = adminRulesWiki
+                    contents = townsWiki
                 ),
             )
         ),
@@ -38,12 +32,12 @@ class DefaultWikiPageComponent : WikiPageComponent {
         WikiPageComponent.Model.Page.WikiPageModel(
             fragmentInternal = "economy",
             titleInternal = "йцукенгшщзхъфывапролджэячсмитьбю",
-            contents = economicsWikiPage
+            contents = townsWiki
         ),
         WikiPageComponent.Model.Page.WikiPageModel(
             fragmentInternal = "commands",
             titleInternal = "йцукенгшщзхъфывапролджэячсмитьбю",
-            contents = commandsWikiPage
+            contents = townsWiki
         ),
         WikiPageComponent.Model.Page.WikiPageModel(
             fragmentInternal = "towns",

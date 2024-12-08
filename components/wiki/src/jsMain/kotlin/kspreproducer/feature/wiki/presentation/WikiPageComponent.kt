@@ -1,7 +1,7 @@
 package kspreproducer.feature.wiki.presentation
 
-import kspreproducer.feature.wiki.presentation.model.WikiItem
 import kotlinx.coroutines.flow.StateFlow
+import kspreproducer.feature.wiki.presentation.model.WikiItem
 
 interface WikiPageComponent {
     val pages: List<Model>

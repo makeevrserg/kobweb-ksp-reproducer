@@ -7,9 +7,9 @@ import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
 import com.varabyte.kobweb.silk.components.layout.SimpleGrid
 import com.varabyte.kobweb.silk.style.breakpoint.ResponsiveValues
-//import empiresmp.components.hrefcard.HrefCard
-//import ru.astrainteractive.kobwebx.core.resource.Hrefs
-//import ru.astrainteractive.kobwebx.core.resource.Resources
+// import empiresmp.components.hrefcard.HrefCard
+// import ru.astrainteractive.kobwebx.core.resource.Hrefs
+// import ru.astrainteractive.kobwebx.core.resource.Resources
 
 @Composable
 fun MainWikiLayout() {
