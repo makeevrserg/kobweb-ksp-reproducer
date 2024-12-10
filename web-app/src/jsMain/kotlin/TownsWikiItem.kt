@@ -1,25 +1,18 @@
 @file:Suppress("MaxLineLength")
 
-package kspreproducer.feature.wiki.presentation.page
-
-import kspreproducer.feature.wiki.presentation.model.WikiItem
-
 val townsWiki = buildList {
-    WikiItem.Section("").run(::add)
-    WikiItem
-        .Text(
+    listOf("").run(::add)
+    listOf(
             "  ,       Towny.   -    ."
         )
         .run(::add)
-    WikiItem
-        .Text("  -  -   /towny menu")
+    listOf("  -  -   /towny menu")
         .run(::add)
     // Section ------------------------------------------------------------------
-    WikiItem.Section("").run(::add)
+    listOf("").run(::add)
     "        https://map.empireprojekt.ru"
-        .let(WikiItem::Text)
         .run(::add)
-    WikiItem.Text(
+    listOf(
         "/towny universe -  ,  ,   ." +
                 "/town list -  " +
                 "/nation list -  " +
@@ -29,17 +22,14 @@ val townsWiki = buildList {
                 "/towny time -       "
     ).run(::add)
     // Section ------------------------------------------------------------------
-    WikiItem.Section(" ").run(::add)
+    listOf(" ").run(::add)
     "⚠️️       "
-        .let(WikiItem::Text)
         .run(::add)
     "⚠️️      .  F3+G   "
-        .let(WikiItem::Text)
         .run(::add)
     "⚠️️    "
-        .let(WikiItem::Text)
         .run(::add)
-    WikiItem.Text(
+    listOf(
         "/town new ___ -  .   ,  ,    , " +
                 "/town _ -   " +
                 "/resident _ -   " +
@@ -54,59 +44,56 @@ val townsWiki = buildList {
     ).run(::add)
 
     // Section ------------------------------------------------------------------
-    WikiItem.Section("").run(::add)
-    WikiItem
-        .Text("   -  .     .")
+    listOf("").run(::add)
+    listOf("   -  .     .")
         .run(::add)
-    WikiItem
-        .Text("  /town          ")
+    listOf("  /town          ")
         .run(::add)
-    WikiItem
-        .Text(
+    listOf(
             "     -  .      .     /town   .     -        !"
         )
         .run(::add)
-    WikiItem
-        .Text(
+    listOf(
             "⚠\uFE0F    .  ,        . " +
                     ",      10\$ -   5       100\$. " +
                     "        100\$     . " +
                     "           ."
         ).run(::add)
-    WikiItem
-        .Text("⚠\uFE0F,    ,     !")
+    listOf("⚠\uFE0F,    ,     !")
         .run(::add)
-    WikiItem
-        .Text("⚠\uFE0F,          ")
+    listOf("⚠\uFE0F,    ,     !")
+    ("⚠\uFE0F,          ")
         .run(::add)
-    WikiItem.Text(
+    listOf("⚠\uFE0F,    ,     !")
+    (
         "/town deposit  -    " +
                 "/town withdraw  -    " +
                 "/town set tax  -    " +
                 "/town toggle taxpercent -    .    %   "
     ).run(::add)
-    WikiItem
-        .Text("      ")
+    listOf("⚠\uFE0F,    ,     !")
+    ("      ")
         .run(::add)
-    WikiItem.Text(
+    listOf("⚠\uFE0F,    ,     !")
+    (
         "/t set plottax  -      "
     ).run(::add)
 
     // Section ------------------------------------------------------------------
-    WikiItem.Section(" ").run(::add)
-    WikiItem
-        .Text(
+    listOf(" ").run(::add)
+    listOf("⚠\uFE0F,    ,     !")
+    (
             "     .       -     ,    ."
         )
         .run(::add)
-    WikiItem.Text(
+    listOf(
         "/plot fs  -    " +
                 "/plot nfs -    "
     ).run(::add)
 
     // Section ------------------------------------------------------------------
-    WikiItem.Section("").run(::add)
-    WikiItem.Text(
+    listOf("").run(::add)
+    listOf(
         "/t set perm off -     " +
                 "/plot toggle  - /  ,   ." +
                 "/plot set perm off -          " +
@@ -117,8 +104,8 @@ val townsWiki = buildList {
     ).run(::add)
 
     // Section ------------------------------------------------------------------
-    WikiItem.Section(" ").run(::add)
-    WikiItem.Text(
+    listOf(" ").run(::add)
+    listOf(
         buildString {
             append("    . ")
             append(",        -. ")
@@ -126,7 +113,7 @@ val townsWiki = buildList {
             append("        .")
         }
     ).run(::add)
-    WikiItem.Text(
+    listOf(
         "/plot set _ -    .     " +
                 "/plot set farm - .   .     /towny map"
     ).run(::add)
