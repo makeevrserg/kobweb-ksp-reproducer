@@ -1,14 +1,9 @@
 package kspreproducer.feature.wiki.presentation
 
-import kotlinx.coroutines.flow.StateFlow
 import kspreproducer.feature.wiki.presentation.model.WikiItem
 
 interface WikiPageComponent {
     val pages: List<Model>
-
-    val currentPage: StateFlow<Model.Page>
-
-    fun selectPage(page: Model.Page)
 
     sealed interface Model {
 

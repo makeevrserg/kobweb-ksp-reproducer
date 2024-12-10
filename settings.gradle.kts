@@ -18,6 +18,3 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 rootProject.name = "kspreproducer"
 include(":web-app")
-include(":components:core-krate")
-include(":components:core-localization")
-include(":components:wiki")

@@ -1,6 +1,5 @@
 package kspreproducer.feature.wiki.presentation
 
-import kotlinx.coroutines.flow.MutableStateFlow
 import kspreproducer.feature.wiki.presentation.page.townsWiki
 
 class DefaultWikiPageComponent : WikiPageComponent {
@@ -82,9 +81,4 @@ class DefaultWikiPageComponent : WikiPageComponent {
             )
         ),
     )
-    override val currentPage = MutableStateFlow(pages.filterIsInstance<WikiPageComponent.Model.Page>().first())
-
-    override fun selectPage(page: WikiPageComponent.Model.Page) {
-        currentPage.value = page
-    }
 }
