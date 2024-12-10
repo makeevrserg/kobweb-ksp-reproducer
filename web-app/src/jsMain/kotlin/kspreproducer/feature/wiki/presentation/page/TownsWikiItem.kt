@@ -19,14 +19,14 @@ val townsWiki = buildList {
     "        https://map.empireprojekt.ru"
         .let(WikiItem::Text)
         .run(::add)
-    WikiItem.Item.Card(
-        "/towny universe -  ,  ,   .",
-        "/town list -  ",
-        "/nation list -  ",
-        "/towny prices -      .",
-        "/town -     ",
-        "/town plots -     ",
-        "/towny time -       "
+    WikiItem.Text(
+        "/towny universe -  ,  ,   ." +
+                "/town list -  " +
+                "/nation list -  " +
+                "/towny prices -      ." +
+                "/town -     " +
+                "/town plots -     " +
+                "/towny time -       "
     ).run(::add)
     // Section ------------------------------------------------------------------
     WikiItem.Section(" ").run(::add)
@@ -39,18 +39,18 @@ val townsWiki = buildList {
     "⚠️️    "
         .let(WikiItem::Text)
         .run(::add)
-    WikiItem.Item.Card(
-        "/town new ___ -  .   ,  ,    , ",
-        "/town _ -   ",
-        "/resident _ -   ",
-        "/t spawn -   ",
-        "/town set spawn -         ",
-        "/resident toggle constantplotborder -  F3+G",
-        "/town claim -   ",
-        "/town map -     ",
-        "/town buy bonus 1 -    ",
-        "/town invite  -    ",
-        "/town toggle open -   /  "
+    WikiItem.Text(
+        "/town new ___ -  .   ,  ,    , " +
+                "/town _ -   " +
+                "/resident _ -   " +
+                "/t spawn -   " +
+                "/town set spawn -         " +
+                "/resident toggle constantplotborder -  F3+G" +
+                "/town claim -   " +
+                "/town map -     " +
+                "/town buy bonus 1 -    " +
+                "/town invite  -    " +
+                "/town toggle open -   /  "
     ).run(::add)
 
     // Section ------------------------------------------------------------------
@@ -69,9 +69,9 @@ val townsWiki = buildList {
     WikiItem
         .Text(
             "⚠\uFE0F    .  ,        . " +
-                ",      10\$ -   5       100\$. " +
-                "        100\$     . " +
-                "           ."
+                    ",      10\$ -   5       100\$. " +
+                    "        100\$     . " +
+                    "           ."
         ).run(::add)
     WikiItem
         .Text("⚠\uFE0F,    ,     !")
@@ -79,16 +79,16 @@ val townsWiki = buildList {
     WikiItem
         .Text("⚠\uFE0F,          ")
         .run(::add)
-    WikiItem.Item.Card(
-        "/town deposit  -    ",
-        "/town withdraw  -    ",
-        "/town set tax  -    ",
-        "/town toggle taxpercent -    .    %   ",
+    WikiItem.Text(
+        "/town deposit  -    " +
+                "/town withdraw  -    " +
+                "/town set tax  -    " +
+                "/town toggle taxpercent -    .    %   "
     ).run(::add)
     WikiItem
         .Text("      ")
         .run(::add)
-    WikiItem.Item.Card(
+    WikiItem.Text(
         "/t set plottax  -      "
     ).run(::add)
 
@@ -99,21 +99,21 @@ val townsWiki = buildList {
             "     .       -     ,    ."
         )
         .run(::add)
-    WikiItem.Item.Card(
-        "/plot fs  -    ",
-        "/plot nfs -    ",
+    WikiItem.Text(
+        "/plot fs  -    " +
+                "/plot nfs -    "
     ).run(::add)
 
     // Section ------------------------------------------------------------------
     WikiItem.Section("").run(::add)
-    WikiItem.Item.Card(
-        "/t set perm off -     ",
-        "/plot toggle  - /  ,   .",
-        "/plot set perm off -          ",
-        "/t set perm resident build on -    ,       .",
-        "/t set perm    -   .  .   ,   ",
-        "/plot set perm    -      .   ,   ",
-        "/plot perm hud - /   "
+    WikiItem.Text(
+        "/t set perm off -     " +
+                "/plot toggle  - /  ,   ." +
+                "/plot set perm off -          " +
+                "/t set perm resident build on -    ,       ." +
+                "/t set perm    -   .  .   ,   " +
+                "/plot set perm    -      .   ,   " +
+                "/plot perm hud - /   "
     ).run(::add)
 
     // Section ------------------------------------------------------------------
@@ -126,8 +126,8 @@ val townsWiki = buildList {
             append("        .")
         }
     ).run(::add)
-    WikiItem.Item.Card(
-        "/plot set _ -    .     ",
-        "/plot set farm - .   .     /towny map"
+    WikiItem.Text(
+        "/plot set _ -    .     " +
+                "/plot set farm - .   .     /towny map"
     ).run(::add)
 }
